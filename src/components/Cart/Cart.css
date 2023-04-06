@@ -4,3 +4,13 @@
     position: sticky;
     top: 0;
 }
+.clear-cart{
+   width: 90%;
+   margin: 0 auto;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   background-color: rgba(255, 0, 0, 0.743);
+   font-size: 20px;
+   color: floralwhite;
+}
