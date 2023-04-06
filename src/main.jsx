@@ -11,6 +11,7 @@ import Login from './components/Login/Login';
 import Shop from './components/Shop/Shop';
 import Orders from './components/Orders/Orders';
 import cardProductLoader from './Loader/CardProductLoader';
+import ProcieedCheekout from './components/ProcieedCheekout/ProcieedCheekout';
 const router = createBrowserRouter([
   {
     path :'/',
@@ -24,6 +25,10 @@ const router = createBrowserRouter([
         path:'orders',
         element : <Orders></Orders>,
         loader : cardProductLoader
+      },
+      {
+        path:'proccedCheekout',
+        element:<ProcieedCheekout></ProcieedCheekout>
       },
       {
         path:'inventory',

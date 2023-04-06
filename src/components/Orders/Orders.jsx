@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
 import Cart from '../Cart/Cart';
-import { useLoaderData } from 'react-router-dom';
+import { Link, useLoaderData } from 'react-router-dom';
 import ReviewItme from '../ReviewItem/ReviewItme';
 import './Order.css';
 import { deleteShoppingCart, removeFromDb } from '../../utilities/fakedb';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowAltCircleRight } from '@fortawesome/free-solid-svg-icons'
 
 const Orders = () => {
     const saveCart = useLoaderData();
@@ -33,7 +35,15 @@ const Orders = () => {
                 <Cart 
                 cart={cart}
                 clearCart={clearCart}
-                ></Cart>
+                >
+                    <Link className='link' to='/proccedCheekout'>
+                        <button className='procid-cheekout'>
+                            <span>Procide cheekout</span>
+                            <FontAwesomeIcon icon={faArrowAltCircleRight} />
+                        </button>
+                        
+                    </Link>
+                </Cart>
             </div>
         </div>
     );
