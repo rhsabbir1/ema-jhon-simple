@@ -4,9 +4,38 @@
     border-radius: 8px;
     margin-bottom: 20px;
     padding: 8px;
-   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.review-details{
+    display: flex;
+    gap: 15px;
+}
+.review-details p{
+    margin: 0;
 }
 .review-item img{
     width: 90px;
     height: 90px;
+    border-radius: 6px;
+}
+.oranger-text{
+    color: orange;
+}
+/* delete-btn styles */
+.delete-btn{
+    background-color: rgba(235,87,87,0.3);
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+.delete-icon{
+    color: red;
+    font-size: 24px;
+   
 }
