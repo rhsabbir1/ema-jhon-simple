@@ -12,6 +12,7 @@ import Shop from './components/Shop/Shop';
 import Orders from './components/Orders/Orders';
 import cardProductLoader from './Loader/CardProductLoader';
 import ProcieedCheekout from './components/ProcieedCheekout/ProcieedCheekout';
+import SingUp from './components/SingUp/SingUp';
 const router = createBrowserRouter([
   {
     path :'/',
@@ -37,6 +38,10 @@ const router = createBrowserRouter([
       {
         path:'login',
         element:<Login></Login>
+      },
+      {
+        path:'singUp',
+        element:<SingUp></SingUp>
       }
     ]
   }
