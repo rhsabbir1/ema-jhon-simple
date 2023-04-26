@@ -14,6 +14,7 @@ import cardProductLoader from './Loader/CardProductLoader';
 import ProcieedCheekout from './components/ProcieedCheekout/ProcieedCheekout';
 import SingUp from './components/SingUp/SingUp';
 import AuthProvider from './components/Provider/AuthProvider';
+import Privaterouters from './routers/Privaterouters';
 const router = createBrowserRouter([
   {
     path: '/',
@@ -30,7 +31,7 @@ const router = createBrowserRouter([
       },
       {
         path: 'proccedCheekout',
-        element: <ProcieedCheekout></ProcieedCheekout>
+        element: <Privaterouters><ProcieedCheekout></ProcieedCheekout></Privaterouters>
       },
       {
         path: 'inventory',
